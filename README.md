@@ -6,17 +6,17 @@ Project is about how to run JMH benchmark tests from test scope with junit and m
 It is recommended to run JMH **not from your tests** but directly from different main method code.
 Unit-tests and other IDE interferes with the measurements.
 
-If your measurements will be in second / minutes or longer than it running the benchmarks from tests
-will not affect so hugely your benchmark results.
+If your measurements will be in second / minutes /hours or longer than running the benchmarks from
+tests will not affect so hugely your benchmark results and you can use solution in this demo.
 
-If your measurements will be in  miliseconds, microseconds , nanoseconds ... run your benchmarks
-rather not from your tests but from main code to have better measurements.
+If your measurements will be in  miliseconds / microseconds / nanoseconds ... run your benchmarks
+rather from main code and not from your tests to have better measurements.
 
 ## Java Microbenchmark Harness Integration
 
 Integration and usage of JMH is really easy. Just take a look at
 [pom.xml](https://github.com/peterszatmary/jmh-benchmark-demo/blob/master/pom.xml) and
-[SampleBenchamrkTest](https://github.com/peterszatmary/jmh-benchmark-demo/blob/master/src/test/java/com/szatmary/peter/SampleBenchmarkTest.java).
+[SampleBenchmarkTest](https://github.com/peterszatmary/jmh-benchmark-demo/blob/master/src/test/java/com/szatmary/peter/SampleBenchmarkTest.java).
 
 ## Run
 
