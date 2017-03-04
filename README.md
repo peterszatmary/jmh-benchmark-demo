@@ -1,2 +1,2 @@
 # jmh-benchmark-demo
-Java Microbenchmark Harness (JMH) runs with Junit and Maven.
+Java Microbenchmark Harness (JMH) that runs with Junit and Maven.
