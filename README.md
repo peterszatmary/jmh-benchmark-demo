@@ -9,7 +9,7 @@ Unit-tests and other IDE interferes with the measurements.
 If your measurements will be in second / minutes /hours or longer than running the benchmarks from
 tests will not affect so hugely your benchmark results and you can use solution in this demo.
 
-If your measurements will be in  miliseconds / microseconds / nanoseconds ... run your benchmarks
+If your measurements will be in  milliseconds / microseconds / nanoseconds ... run your benchmarks
 rather from main code and not from your tests to have better measurements.
 
 ## Java Microbenchmark Harness Integration
@@ -36,10 +36,15 @@ SampleBenchmarkTest.oldWay  avgt    2  11.676          ms/op
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.839 sec
 ```
 
+# How it works
+
+Tests fail if the average time is bigger than set 100 milliseconds. You can check
+and assert of course more atributes from results.
+
 
 ## Conclusion
 
-Dont use this demo if your benchamarks are really "micro". If not it is nice solution to have.
+Dont use this demo if your benchmarks are really "micro". If not it is nice solution to have.
 
 For some is maybe not good choice to have benchmarks in test maven lifecycle.
 If you wish take benchmarking from maven test phase you can create maven profile and and run

@@ -34,7 +34,7 @@ public class SampleBenchmarkTest {
     @State(Scope.Benchmark)
     public static class St {
         private App app = new App();
-        static final double AVERAGE_EXPECTED_TIME = 100;
+        static final double AVERAGE_EXPECTED_TIME = 100; // expected max 100 milliseconds
     }
 
     /**
