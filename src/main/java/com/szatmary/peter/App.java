@@ -5,8 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class App
-{
+public class App {
     public static void main(String[] args) {
         // is not important here now
     }
@@ -33,5 +32,4 @@ public class App
         }
         return result;
     }
-
 }

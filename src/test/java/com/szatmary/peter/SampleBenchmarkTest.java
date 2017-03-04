@@ -20,19 +20,21 @@ import java.util.concurrent.TimeUnit;
 
 import static com.szatmary.peter.SampleBenchmarkTest.St.AVERAGE_EXPECTED_TIME;
 /**
- * It is recommendation to run JHM not from tests but directly from different main code.
- * Because Unit-tests and other IDE interferes with the measurements.
+ * It is recommended to run JMH not from tests but directly from different main method code.
+ * Unit-tests and other IDE interferes with the measurements.
  *
- * If your measurements are in second / minutes and bigger than it maybe should not be an issue.
- * If mili, micro , nano than this can be. And you should run rather your bechmark from
- * custom main classes.
+ * If your measurements will be in second / minutes or longer than it running nechmarks from tests
+ * will not affect your benchmark results.
+ *
+ * If your measurements will be in  miliseconds, microseconds , nanoseconds ... run your
+ * benchmarks rather not from tests bud from main code to have better measurements.
  */
 public class SampleBenchmarkTest {
 
     @State(Scope.Benchmark)
     public static class St {
         private App app = new App();
-        static final double AVERAGE_EXPECTED_TIME = 1;
+        static final double AVERAGE_EXPECTED_TIME = 100;
     }
 
     /**

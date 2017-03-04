@@ -9,5 +9,4 @@ public class ClassicJunitTest {
     public void run() {
         Assert.assertTrue("Hello Junit test".substring(0, 5).equals("Hello"));
     }
-
 }
