@@ -1,4 +1,6 @@
 # jmh-benchmark-demo
+[![Build Status](https://travis-ci.org/peterszatmary/jmh-benchmark-demo.svg?branch=master)](https://travis-ci.org/peterszatmary/jmh-benchmark-demo)
+
 [Java Microbenchmark Harness (JMH)](http://openjdk.java.net/projects/code-tools/jmh/) that runs with Junit and Maven.
 
 Project is about how to run JMH benchmark tests from test scope with junit and maven.
