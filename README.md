@@ -48,4 +48,4 @@ Dont use this demo if your benchmarks are really "micro". If not it is nice solu
 
 For some is maybe not good choice to have benchmarks in test maven lifecycle.
 If you wish take benchmarking from maven test phase you can create maven profile and and run
-benchmarks separately.
+benchmarks separately. See please [jmh-benchmark-in-profile-demo](https://github.com/peterszatmary/jmh-benchmark-in-profile-demo)
