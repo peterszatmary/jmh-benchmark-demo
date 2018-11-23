@@ -1,5 +1,7 @@
-# jmh-benchmark-demo
+# jmh-benchmark-demo #
+
 [![Build Status](https://travis-ci.org/peterszatmary/jmh-benchmark-demo.svg?branch=master)](https://travis-ci.org/peterszatmary/jmh-benchmark-demo)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/edff817c5a914a30a835c0a40f318d4c)](https://www.codacy.com/app/peterszatmary/jmh-benchmark-demo?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=peterszatmary/jmh-benchmark-demo&amp;utm_campaign=Badge_Grade)
 
 [Java Microbenchmark Harness (JMH)](http://openjdk.java.net/projects/code-tools/jmh/) that runs with Junit and Maven.
 
@@ -14,22 +16,23 @@ tests will not affect so hugely your benchmark results and you can use solution 
 If your measurements will be in  milliseconds / microseconds / nanoseconds ... run your benchmarks
 rather from main code and not from your tests to have better measurements.
 
-## Java Microbenchmark Harness Integration
+## Java Microbenchmark Harness Integration ##
 
 Integration and usage of JMH is really easy. Just take a look at
 [pom.xml](https://github.com/peterszatmary/jmh-benchmark-demo/blob/master/pom.xml) and
 [SampleBenchmarkTest](https://github.com/peterszatmary/jmh-benchmark-demo/blob/master/src/test/java/com/szatmary/peter/SampleBenchmarkTest.java).
 
-## Run
+## Run ##
 
 you can run test with your IDE also with maven
-```
+
+```bash
 mvn clean test
 ```
 
 Results after all benchmark ends
 
-```
+```text
 # Run complete. Total time: 00:00:07
 
 Benchmark                   Mode  Cnt   Score   Error  Units
@@ -38,13 +41,13 @@ SampleBenchmarkTest.oldWay  avgt    2  11.676          ms/op
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.839 sec
 ```
 
-# How it works
+# How it works #
 
 Tests fail if the average time is bigger than set 100 milliseconds. You can check
 and assert of course more atributes from results.
 
 
-## Conclusion
+## Conclusion ##
 
 Dont use this demo if your benchmarks are really "micro". If not it is nice solution to have.
 
