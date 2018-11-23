@@ -41,11 +41,10 @@ SampleBenchmarkTest.oldWay  avgt    2  11.676          ms/op
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.839 sec
 ```
 
-# How it works #
+## How it works ##
 
 Tests fail if the average time is bigger than set 100 milliseconds. You can check
 and assert of course more atributes from results.
-
 
 ## Conclusion ##
 
